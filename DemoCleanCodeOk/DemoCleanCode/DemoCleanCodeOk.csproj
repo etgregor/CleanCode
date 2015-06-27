@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2E66D505-043A-4A3F-B36D-F66BD21D94FB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DemoCleanCode</RootNamespace>
+    <AssemblyName>DemoCleanCode</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+	  <StyleCopTreatErrorsAsWarnings>true</StyleCopTreatErrorsAsWarnings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business\PayrollCalculator.cs" />
+    <Compile Include="Entities\SalariedEmployee.cs" />
+    <Compile Include="Entities\DetailRow.cs" />
+    <Compile Include="Entities\EmployeeBase.cs" />
+    <Compile Include="Entities\EmployeeProfile.cs" />
+    <Compile Include="Entities\FormRow.cs" />
+    <Compile Include="Entities\Identity.cs" />
+    <Compile Include="Entities\OutsourcingEmployee.cs" />
+    <Compile Include="Entities\PostalAddress.cs" />
+    <Compile Include="Entities\User.cs" />
+    <Compile Include="Enums\UserRoles.cs" />
+    <Compile Include="Persistence\DetailPersistance.cs" />
+    <Compile Include="Security\Autenticator.cs" />
+    <Compile Include="Persistence\FormPersistance.cs" />
+    <Compile Include="Interfaces\IEmployee.cs" />
+    <Compile Include="Persistence\SalaryPersistance.cs" />
+    <Compile Include="Persistence\TimeSheetPersistance.cs" />
+    <Compile Include="Persistence\UserPersistance.cs" />
+    <Compile Include="Security\Authorizer.cs" />
+    <Compile Include="Security\SessionManager.cs" />
+    <Compile Include="Tools\JsonSerializer.cs" />
+    <Compile Include="Entities\WorkDayOfWeekPattern.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MxSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\x.7\StyleCop.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

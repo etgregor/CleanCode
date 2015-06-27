@@ -1,0 +1,7 @@
+Y:\Desktop\Leer\CleanCode\DemoVisualStudio\DemoCleanCodeOk\DemoCleanCode\bin\Debug\DemoCleanCode.dll
+Y:\Desktop\Leer\CleanCode\DemoVisualStudio\DemoCleanCodeOk\DemoCleanCode\bin\Debug\DemoCleanCode.pdb
+Y:\Desktop\Leer\CleanCode\DemoVisualStudio\DemoCleanCodeOk\DemoCleanCode\bin\Debug\Newtonsoft.Json.dll
+Y:\Desktop\Leer\CleanCode\DemoVisualStudio\DemoCleanCodeOk\DemoCleanCode\bin\Debug\Newtonsoft.Json.xml
+Y:\Desktop\Leer\CleanCode\DemoVisualStudio\DemoCleanCodeOk\DemoCleanCode\obj\Debug\DemoCleanCodeOk.csprojResolveAssemblyReference.cache
+Y:\Desktop\Leer\CleanCode\DemoVisualStudio\DemoCleanCodeOk\DemoCleanCode\obj\Debug\DemoCleanCode.dll
+Y:\Desktop\Leer\CleanCode\DemoVisualStudio\DemoCleanCodeOk\DemoCleanCode\obj\Debug\DemoCleanCode.pdb
