@@ -1,0 +1,59 @@
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.pdb
+*.suo
+*.user
+*.BASE.*
+*.LOCAL.*
+*.REMOTE.*# Compiled directories #
+###################
+Debug/
+Release/
+bin/
+obj/
+.svn/
+Debug/
+TestResults/
+_ReSharper.*
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.csproj.user
+*.csproj.vspscc
+*.psess
+*.vspx
+# Logs and databases #
+######################
+*.log
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store?
+ehthumbs.db
+Icon?
+Thumbs.db
+.orig?
+*.orig
+.Cache?
+*.Cache
+*.crc
+*.dat
+._.DS_Store
+.DS_Store
